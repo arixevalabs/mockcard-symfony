@@ -1,0 +1,23 @@
+{
+  "name": "mockcard/symfony-bundle",
+  "description": "MockCard for Symfony: probe guard for webhook routes, DI configuration and a chaos-run console command.",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [{ "name": "Arixeva Labs", "email": "hello@arixevalabs.com" }],
+  "keywords": ["mockcard", "symfony", "symfony-bundle", "payments", "webhooks", "stripe", "razorpay", "chaos testing", "idempotency", "webhook testing"],
+  "homepage": "https://www.mockcard.io/docs",
+  "support": { "issues": "https://github.com/arixevalabs/mockcard-symfony/issues", "source": "https://github.com/arixevalabs/mockcard-symfony", "docs": "https://www.mockcard.io/docs" },
+  "require": {
+    "php": ">=8.2",
+    "mockcard/mockcard-php": "^2.0",
+    "symfony/http-kernel": "^7.2",
+    "symfony/dependency-injection": "^7.2",
+    "symfony/config": "^7.2",
+    "symfony/console": "^7.2",
+    "symfony/event-dispatcher": "^7.2"
+  },
+  "require-dev": { "phpunit/phpunit": "^11.5" },
+  "autoload": { "psr-4": { "MockCard\\Symfony\\": "src/" } },
+  "autoload-dev": { "psr-4": { "MockCard\\Symfony\\Tests\\": "tests/" } },
+  "scripts": { "test": "phpunit tests" }
+}
